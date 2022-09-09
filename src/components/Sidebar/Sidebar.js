@@ -102,14 +102,15 @@ const Sidebar = (props) => {
         {/* Brand */}
         {logo ? (
           <NavbarBrand className="pt-0" {...navbarBrandProps}>
-            {/* <img
+          {/*   <img
               alt={logo.imgAlt}
               className="navbar-brand-img"
-              src={require("../../assets/img/theme/IIITL_transparent_logo.png")}
+              src={require("../../assets/img/brand/IIITL.png")}
               width="200px"
               height="200px"
             /> */}
             <h1>IIITL MESS </h1>
+            
           </NavbarBrand>
         ) : null}
         {/* User */}
