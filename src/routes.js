@@ -32,7 +32,7 @@ var routes = [
   },
   {
     path: "/tables",
-    name: "Issues/ complaiants",
+    name: "Issues / complaiants",
     icon: "ni ni-bullet-list-67 text-red",
     component: Tables,
     layout: "/admin"
