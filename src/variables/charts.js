@@ -303,7 +303,7 @@ let chartExample1 = {
           ticks: {
             callback: function (value) {
               if (!(value % 10)) {
-                return "$" + value + "k";
+                return value;
               }
             }
           }
@@ -321,7 +321,7 @@ let chartExample1 = {
             content += label;
           }
 
-          content += "$" + yLabel + "k";
+          content += yLabel;
           return content;
         }
       }
@@ -333,7 +333,7 @@ let chartExample1 = {
       datasets: [
         {
           label: "Performance",
-          data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+          data: [250, 300, 200, 400, 300, 520, 600, 460, 600]
         }
       ]
     };
@@ -344,7 +344,7 @@ let chartExample1 = {
       datasets: [
         {
           label: "Performance",
-          data: [0, 20, 5, 25, 10, 30, 15, 40, 40]
+          data: [300, 400, 250, 400, 300, 520, 300,500, 600]
         }
       ]
     };

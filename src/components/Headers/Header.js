@@ -6,10 +6,10 @@ const Header = () => {
     <>
       <div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
         <Container fluid>
-          <div className="header-body">
+          <div className="header-body" >
             {/* Card stats */}
             <Row>
-              <Col lg="6" xl="3">
+              <Col lg="6" xl="4">
                 <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
                     <Row>
@@ -18,10 +18,10 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Traffic
+                          Total Students
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
-                          350,897
+                          600
                         </span>
                       </div>
                       <Col className="col-auto">
@@ -34,12 +34,12 @@ const Header = () => {
                       <span className="text-success mr-2">
                         <i className="fa fa-arrow-up" /> 3.48%
                       </span>{" "}
-                      <span className="text-nowrap">Since last month</span>
+                      <span className="text-nowrap">Since last Year</span>
                     </p>
                   </CardBody>
                 </Card>
               </Col>
-              <Col lg="6" xl="3">
+              <Col lg="6" xl="4">
                 <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
                     <Row>
@@ -48,9 +48,9 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          New users
+                          Students present
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">2,356</span>
+                        <span className="h2 font-weight-bold mb-0">480</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
@@ -62,12 +62,12 @@ const Header = () => {
                       <span className="text-danger mr-2">
                         <i className="fas fa-arrow-down" /> 3.48%
                       </span>{" "}
-                      <span className="text-nowrap">Since last week</span>
+                      <span className="text-nowrap">Since yesterday</span>
                     </p>
                   </CardBody>
                 </Card>
               </Col>
-              <Col lg="6" xl="3">
+              <Col lg="6" xl="4">
                 <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
                     <Row>
@@ -76,9 +76,9 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Sales
+                          Absenties
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">924</span>
+                        <span className="h2 font-weight-bold mb-0">120</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
@@ -96,7 +96,7 @@ const Header = () => {
                 </Card>
               </Col>
               <Col lg="6" xl="3">
-                <Card className="card-stats mb-4 mb-xl-0">
+                {/* <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
                     <Row>
                       <div className="col">
@@ -121,7 +121,7 @@ const Header = () => {
                       <span className="text-nowrap">Since last month</span>
                     </p>
                   </CardBody>
-                </Card>
+                </Card> */}
               </Col>
             </Row>
           </div>
