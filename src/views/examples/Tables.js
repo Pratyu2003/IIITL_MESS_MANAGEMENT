@@ -35,7 +35,7 @@ const Tables = () => {
                 <h3 className="mb-0">Card tables</h3>
               </CardHeader>
               <Table className="align-items-center table-flush" responsive>
-                <thead className="thead-light">
+                <thead className="thead-dark">
                   <tr>
                     <th scope="col">DAY</th>
                     <th scope="col">Breakfast</th>
@@ -60,6 +60,7 @@ const Tables = () => {
                           /> */}
                         {/* </a> */}
                         <Media>
+
                           <span className="mb-0 text-sm">
                             Monday
                           </span>
@@ -130,28 +131,170 @@ const Tables = () => {
                         {/* </a> */}
                         <Media>
                           <span className="mb-0 text-sm">
-                            Monday
+                            Tuesday
+                          </span>
+                        </Media>
+                      </Media>
+                    </th>
+                    <td>
+                      <li>Pav Bhaji </li>
+                      <li>Daliya </li>
+                      <li>Milk, Tea Banana - 1pc</li>
+                    </td>
+                    <td>
+                    <li>Crunchy Aloo</li>
+                    <li>Jeera</li>
+                    <li>Kadhi</li>
+                    <li>Roti Rice</li>
+                    </td>
+                    <td>
+                      <li>Semiya upma</li>
+                      <li>Tea</li>
+                    </td>
+                    <td>
+                    <li>Matar Paneer</li>
+                    <li>Mix Dal Fry</li>
+                    <li>Roti, Rice</li>
+                    </td>
+                    {/* <td className="text-right">
+                      <UncontrolledDropdown>
+                        <DropdownToggle
+                          className="btn-icon-only text-light"
+                          href="#pablo"
+                          role="button"
+                          size="sm"
+                          color=""
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          <i className="fas fa-ellipsis-v" />
+                        </DropdownToggle>
+                        <DropdownMenu className="dropdown-menu-arrow" right>
+                          <DropdownItem
+                            href="#pablo"
+                            onClick={(e) => e.preventDefault()}
+                          >
+                            Complaint
+                          </DropdownItem>
+                          <DropdownItem
+                            href="#pablo"
+                            onClick={(e) => e.preventDefault()}
+                          >
+                            Feedback
+                          </DropdownItem>
+
+                        </DropdownMenu>
+                      </UncontrolledDropdown>
+                    </td> */}
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <Media className="align-items-center">
+                        {/* <a
+                          className="avatar rounded-circle mr-3"
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                        > */}
+                          {/* <img
+                            alt="..."
+                            src={require("../../assets/img/theme/bootstrap.jpg")}
+                          /> */}
+                        {/* </a> */}
+                        <Media>
+                          <span className="mb-0 text-sm">
+                            Wednesday
+                          </span>
+                        </Media>
+                      </Media>
+                    </th>
+                    <td>
+                      <li>Aloo Poori</li>
+                      <li>Daliya </li>
+                      <li>Milk, Tea Banana - 1pc</li>
+                    </td>
+                    <td>
+                    <li>Choley</li>
+                    <li>Veg Biryani</li>
+                    <li>Roti, Raita</li>
+                    </td>
+                    <td>
+                      <li>Poha</li>
+                      <li>Namkeen</li>
+                      <li>Tea</li>
+                    </td>
+                    <td>
+                    <li>Malai Kofta</li>
+                    <li>Arhar Dal Fry</li>
+                    <li>Roti Rice</li>
+                    <li>Custard / Ice Cream</li>
+                    </td>
+                    {/* <td className="text-right">
+                      <UncontrolledDropdown>
+                        <DropdownToggle
+                          className="btn-icon-only text-light"
+                          href="#pablo"
+                          role="button"
+                          size="sm"
+                          color=""
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          <i className="fas fa-ellipsis-v" />
+                        </DropdownToggle>
+                        <DropdownMenu className="dropdown-menu-arrow" right>
+                          <DropdownItem
+                            href="#pablo"
+                            onClick={(e) => e.preventDefault()}
+                          >
+                            Complaint
+                          </DropdownItem>
+                          <DropdownItem
+                            href="#pablo"
+                            onClick={(e) => e.preventDefault()}
+                          >
+                            Feedback
+                          </DropdownItem>
+
+                        </DropdownMenu>
+                      </UncontrolledDropdown>
+                    </td> */}
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <Media className="align-items-center">
+                        {/* <a
+                          className="avatar rounded-circle mr-3"
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                        > */}
+                          {/* <img
+                            alt="..."
+                            src={require("../../assets/img/theme/bootstrap.jpg")}
+                          /> */}
+                        {/* </a> */}
+                        <Media>
+                          <span className="mb-0 text-sm">
+                            Thursday
                           </span>
                         </Media>
                       </Media>
                     </th>
                     <td>
                       <li>Aloo – pyaz Paratha </li>
-                      <li>Pickle </li>
+                      <li>Pickle - Sauce </li>
                       <li>Milk, Tea Banana - 1pc</li>
                     </td>
                     <td>
-                    <li>Rajma</li>
+                    <li>Black Chana</li>
                     <li>Dahi</li>
-                    <li>Roti Rice</li>
+                    <li>Roti, Rice</li>
                     </td>
                     <td>
-                      <li>Pasta sauce</li>
+                      <li>Cutlet</li>
+                      <li> sauce</li>
                       <li>Tea</li>
                     </td>
                     <td>
-                    <li>Shimlamirch</li>
-                    <li>Chana Dal</li>
+                    <li>Soyabean(fry) Aloo</li>
+                    <li>Masoor Dal Fry</li>
                     <li>Roti Rice</li>
                     </td>
                     {/* <td className="text-right">
@@ -199,28 +342,29 @@ const Tables = () => {
                         {/* </a> */}
                         <Media>
                           <span className="mb-0 text-sm">
-                            Monday
+                            Friday
                           </span>
                         </Media>
                       </Media>
                     </th>
                     <td>
-                      <li>Aloo – pyaz Paratha </li>
-                      <li>Pickle </li>
+                      <li>Tawa paratha </li>
+                      <li>Dahi </li>
                       <li>Milk, Tea Banana - 1pc</li>
                     </td>
                     <td>
-                    <li>Rajma</li>
-                    <li>Dahi</li>
+                    <li>Besan Pitor Curry</li>
+                    <li>Moong Dal Tadka (thick gravy)</li>
                     <li>Roti Rice</li>
                     </td>
                     <td>
-                      <li>Pasta sauce</li>
+                      <li>Samosa </li>
+                      <li>Green Chutney</li>
                       <li>Tea</li>
                     </td>
                     <td>
-                    <li>Shimlamirch</li>
-                    <li>Chana Dal</li>
+                    <li>Kashmiri Dum Aloo</li>
+                    <li>Chana Dal Fry</li>
                     <li>Roti Rice</li>
                     </td>
                     {/* <td className="text-right">
@@ -268,29 +412,29 @@ const Tables = () => {
                         {/* </a> */}
                         <Media>
                           <span className="mb-0 text-sm">
-                            Monday
+                            Saturday
                           </span>
                         </Media>
                       </Media>
                     </th>
                     <td>
-                      <li>Aloo – pyaz Paratha </li>
-                      <li>Pickle </li>
+                      <li>Aloo sandwich </li>
+                      <li>Simple Bread </li>
                       <li>Milk, Tea Banana - 1pc</li>
                     </td>
                     <td>
-                    <li>Rajma</li>
-                    <li>Dahi</li>
-                    <li>Roti Rice</li>
+                    <li>Choley Bathure</li>
+                    <li>Boondi Raita</li>
+                    <li>Rice</li>
                     </td>
                     <td>
-                      <li>Pasta sauce</li>
+                      <li>Conflakes mixture</li>
                       <li>Tea</li>
                     </td>
                     <td>
-                    <li>Shimlamirch</li>
-                    <li>Chana Dal</li>
-                    <li>Roti Rice</li>
+                    <li>Mix Veg</li>
+                    <li>Arhar Dal</li>
+                    <li>Roti, Rice</li>
                     </td>
                     {/* <td className="text-right">
                       <UncontrolledDropdown>
@@ -337,167 +481,31 @@ const Tables = () => {
                         {/* </a> */}
                         <Media>
                           <span className="mb-0 text-sm">
-                            Monday
+                            Sunday
                           </span>
                         </Media>
                       </Media>
                     </th>
                     <td>
-                      <li>Aloo – pyaz Paratha </li>
-                      <li>Pickle </li>
+                      <li>Uttapam </li>
+                      <li>Sambhar & Coconut Chutney </li>
                       <li>Milk, Tea Banana - 1pc</li>
                     </td>
                     <td>
-                    <li>Rajma</li>
-                    <li>Dahi</li>
-                    <li>Roti Rice</li>
+                    <li>Dal Makhani</li>
+                    <li>Tawa Paratha</li>
+                    <li>Veg- Biryani</li>
+                      <li>Raita</li>
                     </td>
                     <td>
-                      <li>Pasta sauce</li>
+                      <li>Maggie, sauce</li>
                       <li>Tea</li>
                     </td>
                     <td>
-                    <li>Shimlamirch</li>
-                    <li>Chana Dal</li>
+                    <li>Kadhai Paneer</li>
+                    <li>Mix Dal Fry</li>
                     <li>Roti Rice</li>
-                    </td>
-                    {/* <td className="text-right">
-                      <UncontrolledDropdown>
-                        <DropdownToggle
-                          className="btn-icon-only text-light"
-                          href="#pablo"
-                          role="button"
-                          size="sm"
-                          color=""
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fas fa-ellipsis-v" />
-                        </DropdownToggle>
-                        <DropdownMenu className="dropdown-menu-arrow" right>
-                          <DropdownItem
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Complaint
-                          </DropdownItem>
-                          <DropdownItem
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Feedback
-                          </DropdownItem>
-
-                        </DropdownMenu>
-                      </UncontrolledDropdown>
-                    </td> */}
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <Media className="align-items-center">
-                        {/* <a
-                          className="avatar rounded-circle mr-3"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        > */}
-                          {/* <img
-                            alt="..."
-                            src={require("../../assets/img/theme/bootstrap.jpg")}
-                          /> */}
-                        {/* </a> */}
-                        <Media>
-                          <span className="mb-0 text-sm">
-                            Monday
-                          </span>
-                        </Media>
-                      </Media>
-                    </th>
-                    <td>
-                      <li>Aloo – pyaz Paratha </li>
-                      <li>Pickle </li>
-                      <li>Milk, Tea Banana - 1pc</li>
-                    </td>
-                    <td>
-                    <li>Rajma</li>
-                    <li>Dahi</li>
-                    <li>Roti Rice</li>
-                    </td>
-                    <td>
-                      <li>Pasta sauce</li>
-                      <li>Tea</li>
-                    </td>
-                    <td>
-                    <li>Shimlamirch</li>
-                    <li>Chana Dal</li>
-                    <li>Roti Rice</li>
-                    </td>
-                    {/* <td className="text-right">
-                      <UncontrolledDropdown>
-                        <DropdownToggle
-                          className="btn-icon-only text-light"
-                          href="#pablo"
-                          role="button"
-                          size="sm"
-                          color=""
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fas fa-ellipsis-v" />
-                        </DropdownToggle>
-                        <DropdownMenu className="dropdown-menu-arrow" right>
-                          <DropdownItem
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Complaint
-                          </DropdownItem>
-                          <DropdownItem
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Feedback
-                          </DropdownItem>
-
-                        </DropdownMenu>
-                      </UncontrolledDropdown>
-                    </td> */}
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <Media className="align-items-center">
-                        {/* <a
-                          className="avatar rounded-circle mr-3"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        > */}
-                          {/* <img
-                            alt="..."
-                            src={require("../../assets/img/theme/bootstrap.jpg")}
-                          /> */}
-                        {/* </a> */}
-                        <Media>
-                          <span className="mb-0 text-sm">
-                            Monday
-                          </span>
-                        </Media>
-                      </Media>
-                    </th>
-                    <td>
-                      <li>Aloo – pyaz Paratha </li>
-                      <li>Pickle </li>
-                      <li>Milk, Tea Banana - 1pc</li>
-                    </td>
-                    <td>
-                    <li>Rajma</li>
-                    <li>Dahi</li>
-                    <li>Roti Rice</li>
-                    </td>
-                    <td>
-                      <li>Pasta sauce</li>
-                      <li>Tea</li>
-                    </td>
-                    <td>
-                    <li>Shimlamirch</li>
-                    <li>Chana Dal</li>
-                    <li>Roti Rice</li>
+                    <li>Gulab Jamun / Jalebi</li>
                     </td>
                     {/* <td className="text-right">
                       <UncontrolledDropdown>
