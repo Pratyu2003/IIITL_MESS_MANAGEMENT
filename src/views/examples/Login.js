@@ -1,5 +1,6 @@
 
 // reactstrap components
+import { useState } from "react";
 import {
   Button,
   Card,
@@ -15,6 +16,40 @@ import {
 } from "reactstrap";
 
 const Login = () => {
+
+    const [user,setUser] = useState({
+      email:"",password:""
+    });
+
+    let name,value;
+    const handleChange = (e) => {
+      console.log(user)
+
+      name = e.target.name;
+      value = e.target.value;
+
+      setUser({...user,[name]:value});
+    }
+
+  async function LoginUser(e){
+  e.preventDefault();
+    const response =  await fetch('http://localhost:3001/auth/login',{
+      method:"POST",
+        headers: {
+          "Content-Type":"application/json",
+        },
+        body:JSON.stringify({
+          email:user.email,
+          password:user.password,
+        })
+      });
+
+      const data = await response.json();
+
+      console.log(data);
+    }
+
+
   return (
     <>
       <Col lg="5" md="7">
@@ -35,6 +70,9 @@ const Login = () => {
                     placeholder="Email"
                     type="email"
                     autoComplete="new-email"
+                    name="email"
+                    value={user.value}
+                    onChange={handleChange}
                   />
                 </InputGroup>
               </FormGroup>
@@ -48,7 +86,10 @@ const Login = () => {
                   <Input
                     placeholder="Password"
                     type="password"
+                    name="password"
                     autoComplete="new-password"
+                    value={user.value}
+                     onChange={handleChange}
                   />
                 </InputGroup>
               </FormGroup>
@@ -66,7 +107,8 @@ const Login = () => {
                 </label>
               </div>
               <div className="text-center">
-                <Button className="my-4" color="primary" type="button">
+                <Button className="my-4" color="primary" type="button"
+                onClick={LoginUser}>
                   Sign in
                 </Button>
               </div>
@@ -89,7 +131,7 @@ const Login = () => {
               href="#pablo"
               onClick={(e) => e.preventDefault()}
             >
-              <small>Create new account</small>
+              <small href="/auth/register">Create new account</small>
             </a>
           </Col>
         </Row>
