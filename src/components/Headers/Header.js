@@ -21,7 +21,7 @@ const Header = () => {
                           Total Students
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
-                          600
+                          1020
                         </span>
                       </div>
                       <Col className="col-auto">
@@ -50,7 +50,7 @@ const Header = () => {
                         >
                           Students present
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">480</span>
+                        <span className="h2 font-weight-bold mb-0">960</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
@@ -78,7 +78,7 @@ const Header = () => {
                         >
                           Absenties
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">120</span>
+                        <span className="h2 font-weight-bold mb-0">60</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">

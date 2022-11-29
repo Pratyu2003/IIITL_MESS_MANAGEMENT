@@ -38,8 +38,8 @@ const Profile = () => {
               </Row>
               <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                 <div className="d-flex justify-content-between">
-                  
-                  <Button
+
+                  {/* <Button
                     className="float-right"
                     color="default"
                     href="#pablo"
@@ -47,7 +47,7 @@ const Profile = () => {
                     size="sm"
                   >
                     Message
-                  </Button>
+                  </Button> */}
                 </div>
               </CardHeader>
               <CardBody className="pt-0 pt-md-4">
@@ -87,7 +87,7 @@ const Profile = () => {
                     LIT2020046
                   </div>
                   <hr className="my-4" />
-                 
+
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     Show more
                   </a>
@@ -102,7 +102,7 @@ const Profile = () => {
                   <Col xs="8">
                     <h3 className="mb-0">My account</h3>
                   </Col>
-                  <Col className="text-right" xs="4">
+                  {/* <Col className="text-right" xs="4">
                     <Button
                       color="primary"
                       href="#pablo"
@@ -111,7 +111,7 @@ const Profile = () => {
                     >
                       Settings
                     </Button>
-                  </Col>
+                  </Col> */}
                 </Row>
               </CardHeader>
               <CardBody>
@@ -135,6 +135,8 @@ const Profile = () => {
                             id="input-username"
                             placeholder="Username"
                             type="text"
+                            value="Shankar Wangwad"
+                            disabled
                           />
                         </FormGroup>
                       </Col>
@@ -151,6 +153,8 @@ const Profile = () => {
                             id="input-email"
                             placeholder=""
                             type="email"
+                            value="LIT2020046@iiitl.ac.in"
+                            disabled
                           />
                         </FormGroup>
                       </Col>
@@ -170,6 +174,8 @@ const Profile = () => {
                             id="input-first-name"
                             placeholder="First name"
                             type="text"
+                            value="Shankar"
+                            disabled
                           />
                         </FormGroup>
                       </Col>
@@ -187,6 +193,8 @@ const Profile = () => {
                             id="input-last-name"
                             placeholder="Last name"
                             type="text"
+                            value="Wangwad"
+                            disabled
                           />
                         </FormGroup>
                       </Col>
@@ -213,6 +221,8 @@ const Profile = () => {
                             id="input-address"
                             placeholder="Home Address"
                             type="text"
+                            value="IIIT Lucknow,CG city, Chak Ganjaria, Lucknow"
+                            disabled
                           />
                         </FormGroup>
                       </Col>
@@ -232,6 +242,8 @@ const Profile = () => {
                             id="input-city"
                             placeholder="City"
                             type="text"
+                            value="Latur"
+                            disabled
                           />
                         </FormGroup>
                       </Col>
@@ -241,14 +253,15 @@ const Profile = () => {
                             className="form-control-label"
                             htmlFor="input-country"
                           >
-                            Country
+                            State
                           </label>
                           <Input
                             className="form-control-alternative"
-                            defaultValue=""
+                            defaultValue="Maharastra"
                             id="input-country"
                             placeholder="Country"
                             type="text"
+                            disabled
                           />
                         </FormGroup>
                       </Col>
@@ -265,6 +278,8 @@ const Profile = () => {
                             id="input-postal-code"
                             placeholder="Postal code"
                             type="number"
+                            value="543215"
+                            disabled
                           />
                         </FormGroup>
                       </Col>
@@ -280,8 +295,11 @@ const Profile = () => {
                         className="form-control-alternative"
                         placeholder="A few words about you ..."
                         rows="4"
-                        defaultValue=""
+                        defaultValue="What should I write about me example?
+                        Image result for about me
+                        I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities my current job position cannot provide."
                         type="textarea"
+                        disabled
                       />
                     </FormGroup>
                   </div>

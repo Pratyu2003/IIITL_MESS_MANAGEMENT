@@ -8,7 +8,7 @@ import AdminNavbar from "components/Navbars/AdminNavbar.js";
 import AdminFooter from "components/Footers/AdminFooter.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 
-import routes from "routes.js";
+import routes from "../routes.js";
 
 const Admin = (props) => {
   const mainContent = React.useRef(null);
@@ -68,8 +68,13 @@ const Admin = (props) => {
           {getRoutes(routes)}
           <Redirect from="*" to="/admin/index" />
         </Switch>
-        <Container fluid>
-          <AdminFooter />
+        <Container fluid >
+          <AdminFooter style={{
+          position:"absolute",
+          left:"0",
+          bottom:"0",
+          right:"0"
+        }}/>
         </Container>
       </div>
     </>

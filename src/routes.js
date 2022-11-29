@@ -6,6 +6,8 @@ import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
+import Forms from "views/examples/Form";
+import Feedback from "views/examples/Feedback";
 // import Icons from "views/examples/Icons.js";
 
 var routes = [
@@ -26,15 +28,22 @@ var routes = [
   {
     path: "/tables",
     name: "Mess Menu",
-    icon: "ni ni-bullet-list-67 text-red",
+    icon: "ni ni-collection text-green",
     component: Tables,
     layout: "/admin"
   },
   {
-    path: "/tables",
-    name: "Issues / complaiants",
+    path: "/issues",
+    name: "Issues / Feedback",
+    icon: "ni ni-chat-round text-red",
+    component: Feedback,
+    layout: "/admin"
+  },
+  {
+    path: "/rebate",
+    name: "Rebate Forms",
     icon: "ni ni-bullet-list-67 text-red",
-    component: Tables,
+    component: Forms,
     layout: "/admin"
   },
   {

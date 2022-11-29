@@ -5,12 +5,20 @@ import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" styles={{
+      position: "fixed",
+      padding: "10px 10px 0px 10px",
+      bottom: "0",
+      width: "100%",
+      /* Height of the footer*/
+      height: "40px",
+      background: "grey"
+    }}>
       <Row className="align-items-center justify-content-xl-between">
         <Col xl="6">
           <div className="copyright text-center text-xl-left text-muted">
             © {new Date().getFullYear()}{" "}
-          
+
           </div>
         </Col>
 
@@ -26,8 +34,8 @@ const Footer = () => {
               </NavLink>
             </NavItem>
 
-            
-            
+
+
 
             <NavItem>
               <NavLink
