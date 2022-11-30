@@ -47,7 +47,7 @@ const RebateCardAdmin = (props)=>{
 
 
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         if(data.update){
           alert(data.update)
         }else{
@@ -87,7 +87,7 @@ const RebateCardAdmin = (props)=>{
               <td>
                   <Row>
                     <Button color="success" id={props.Id} value="accepted" name="status" type="button" onClick={HandleClick}>
-                      Accepted
+                      Accept
                     </Button>
                     <Button color="danger" id={props.Id} value="rejected" type="button" name="status" onClick={HandleClick}>
                       Reject

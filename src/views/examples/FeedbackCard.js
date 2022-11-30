@@ -23,9 +23,7 @@ const FeedbackCard = (props) => {
                   <span className="text-muted mb-0">{props.feedbackInfo}</span>
                 </div>
                 <Col className="col-auto">
-                  <div className="icon icon-shape bg-success text-white rounded-circle shadow">
-                    <i className="ni ni-fat-remove" />
-                  </div>
+                  
                 </Col>
               </Row>
 

@@ -56,7 +56,7 @@ router.put("/rebate", async(req,res) => {
 
 router.get("/rebate", async (req,res) =>{
   const Rebates = await Rebate.find({});
-  console.log(Rebates);
+  // console.log(Rebates);
   if(Rebates)res.json({status:"ok",data:Rebates});
   else res.json({status:"error",error:"Cannot Retrive Rebates at this time"});
 })
