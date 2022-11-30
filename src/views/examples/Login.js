@@ -1,4 +1,3 @@
-
 // reactstrap components
 import { useState } from "react";
 import {
@@ -45,7 +44,21 @@ const Login = () => {
       });
 
       const data = await response.json();
-
+      console.log(data);
+      if(data.admin){
+        alert("logged in as admin Successfully")
+        window.location.href="/admin/index"
+        localStorage.setItem("Admin","True")
+        localStorage.setItem("User","False")
+      }
+      else if(data.user){
+        alert("User Logged in Successfully")
+        window.location.href="/admin/user-profile"
+        localStorage.setItem("Admin","False")
+        localStorage.setItem("User","True")
+      }else{
+        alert("Check your email and password");
+      }
       console.log(data);
     }
 
