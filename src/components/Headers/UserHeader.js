@@ -1,7 +1,7 @@
 
 import { Button, Container, Row, Col } from "reactstrap";
 
-const UserHeader = () => {
+const UserHeader = (props) => {
   return (
     <>
       <div
@@ -22,9 +22,9 @@ const UserHeader = () => {
             <Col lg="7" md="10">
               <h1 className="display-2 text-white">Hello Student !</h1>
               <p className="text-white mt-0 mb-5">
-                This is your profile page. You can see your mess stats
+                This is your {props.page} page. You can see your mess stats
               </p>
-             
+
             </Col>
           </Row>
         </Container>

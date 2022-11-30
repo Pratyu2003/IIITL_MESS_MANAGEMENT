@@ -15,10 +15,19 @@ import {
 import UserHeader from "components/Headers/UserHeader.js";
 
 const Profile = () => {
+
+  const User = localStorage.getItem("User");
+
+  function HandleNotUser(){
+    alert("This Is user only Route");
+    window.location.href="/admin/index"
+  }
+
   return (
     <>
-      <UserHeader />
-      {/* Page content */}
+    { User==="True" ?
+    <>
+      <UserHeader page="profile"/>
       <Container className="mt--7" fluid>
         <Row>
           <Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
@@ -308,8 +317,8 @@ const Profile = () => {
             </Card>
           </Col>
         </Row>
-      </Container>
-    </>
+      </Container></>:HandleNotUser()}
+        </>
   );
 };
 

@@ -16,6 +16,7 @@ import {
 } from "reactstrap";
 
 const Register = () => {
+
   const [user,setUser] = useState({
     name:"",email:"",password:"",RoomNo:"",HostelNo:""
   });
@@ -47,6 +48,14 @@ e.preventDefault();
     });
 
     const data = await response.json();
+    if(data.user){
+      alert("User Created Successfully");
+      localStorage.setItem("Admin","False")
+      localStorage.setItem("User","True")
+      window.location.href="/admin/user-profile"
+    }else{
+      alert(data.error);
+    }
 
     console.log(data);
   }
